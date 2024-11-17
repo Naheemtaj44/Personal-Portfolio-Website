@@ -7,6 +7,14 @@
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
 }
+body.dark{
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
+
 body{
   
     line-height: 1.5;
@@ -71,7 +79,7 @@ margin: auto;
     content: '';
     height: 4px;
     width: 50px;
-    background-color: red;
+    background-color: var(--skin-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -80,7 +88,7 @@ margin: auto;
     content: '';
     height: 4px;
     width: 25px;
-    background-color: red;
+    background-color: var(--skin-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -102,7 +110,7 @@ margin: auto;
     display: inline-block;
     white-space: nowrap;
     border: none;
-    background: red;
+    background: var(--skin-color);                                /*change*/
     transition: all 0.3s ease;
 
 }
@@ -153,10 +161,10 @@ margin: auto;
 .aside .logo a::before{
     content: '';
     position: absolute;
-    width: 2px;
+    width: 20px;
     height: 20px;
-    border-bottom: 5px solid red;
-    border-left: 5px solid red;
+    border-bottom: 5px solid  var(--skin-color); /*change*/
+    border-left: 5px solid  var(--skin-color);    /*change*/
    bottom: 0;
    left:0;
 }
@@ -165,8 +173,8 @@ margin: auto;
     position: absolute;
     width: 20px;
     height: 20px;
-    border-top: 5px solid red;
-    border-right: 5px solid red;
+    border-top: 5px solid  var(--skin-color);                          /*change*/
+    border-right: 5px solid var(--skin-color);                      /*change*/
    top: 0;
    right:0;
 }
@@ -229,7 +237,7 @@ margin: auto;
 
 }
 .aside .nav li a.active{
-    color: red;
+    color: var(--skin-color);                     /*change*/
 }
 .aside .nav li a i{
     margin-right: 15px;
@@ -254,7 +262,7 @@ h3.hello span
     font-family: 'Clicker Script' ,cursive;
     font-size: 30px;
     font-weight: 700;
-    color: red;
+    color: var(--skin-color);                /*change*/
 
 }
 h3.my-profession{
@@ -262,7 +270,7 @@ h3.my-profession{
     margin: 15px 0;
 }
 .typing{
-    color: red;
+    color: var(--skin-color);     /*change*/
 }
 .home-info p{
     margin-bottom: 70px;
@@ -282,8 +290,8 @@ h3.my-profession{
     position: absolute;
     height: 80px;
     width: 80px;
-    border-bottom: 10px solid  red;
-    border-right: 10px solid  red;
+    border-bottom: 10px solid var(--skin-color);    /*change*/
+    border-right: 10px solid  var(--skin-color);    /*change*/
     right: 20px;
     bottom: -40px;
 
@@ -294,8 +302,8 @@ h3.my-profession{
     position: absolute;
     height: 80px;
     width: 80px;
-    border-top: 10px solid red;
-    border-left: 10px solid red;
+    border-top: 10px solid var(--skin-color);       /*change*/
+    border-left: 10px solid  var(--skin-color);  /*change*/
     left: -20px;
     top: -40px;
 
@@ -326,12 +334,12 @@ h3.my-profession{
     color: var(--text-black-900);
 }
 .about .about-content .about-text h3 span{
-    color :var(--skin-color)
+    color :var(--skin-color);
 }
 .about .about-content .about-text p{
     font-size: 16px;
     line-height: 25px;
-    color: var(--text-black-700)
+    color: var(--text-black-700);
 }
 .about .about-content .personal-info{
     flex: 0 0 60%;
@@ -395,7 +403,7 @@ h3.my-profession{
     top :0;
     height: 100%;
     border-radius: 4px;
-    background-color: red;
+    background-color:var(--skin-color);            /*change*/
 }
 .about .about-content .skills .skill-item .skill-percent{
     position: absolute;
@@ -450,8 +458,7 @@ h3.my-profession{
     height: 100%;
     left: 7px;
     top: 0;
-    /*background-color: var(--skin-color);*/
-    background-color: red;
+    background-color: var(--skin-color);               /*change*/
 }
 .about .about-content .timeline .circle-dot{
     position: absolute;
@@ -460,15 +467,14 @@ h3.my-profession{
     height: 15px;
     width: 15px;
     border-radius: 50%;
-/*background-color: var(--skin-color);*/
-background-color: red;
+background-color: var(--skin-color);                           /*change*/
 
 }
 .about .about-content .timeline .timeline-date{
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
-    color: var(--text-black-700)
+    color: var(--text-black-700);
 }
 .about .about-content .timeline .timeline-date .fa{
     margin-right: 5px;
@@ -501,7 +507,7 @@ background-color: red;
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
-    transition: all 0.3S ease;
+    transition: all 0.3s ease;
 
     
 }
@@ -515,18 +521,17 @@ background-color: red;
     display: block;
     margin: 0 auto 30px;
     text-align: center;
-    transition: all 0.3S ease;
+    transition: all 0.3s ease;
 }
 .service .service-item .service-item-inner .icon .fa{
     font-size: 40px;
     line-height: 60px;
-   /* columns: var(--skin-color);*/
-   color: red;
-   transition: all 0.3S ease;
+    color: var(--skin-color);                                     /*change*/
+   transition: all 0.3s ease;
 }
 .service .service-item .service-item-inner:hover .icon{
-   /* background: var(--skin-color);*/
-   background:red;
+    
+   background:var(--skin-color);          /*change*/
 }
 .service .service-item .service-item-inner:hover .icon .fa{
     font-size: 25px;
@@ -574,23 +579,22 @@ margin-bottom: 40px;
 }
 /*contact*/
 .contact-title{
-   /* color: var(--skin-color);*/
-   color: red;
+   color: var(--skin-color);            /*change*/
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
     .contact-sub-title{
          color: var(--text-black-900);
-         
          text-align: center;
          font-size: 15px;
          margin-bottom: 60px;
     }
 .contact .contact-info-item{
     flex: 0 0 25%;
-    text-align:center;
     max-width: 25%;
+    text-align:center;
     margin-bottom: 60px;
 }
 .contact .contact-info-item .icon{
@@ -598,8 +602,8 @@ margin-bottom: 40px;
 }
 .contact .contact-info-item .icon .fa{
     font-size: 25px;
-   /* color: var(--skin-color);*/
-   color: red;
+   color: var(--skin-color);                   /*change*/
+   
 }
 .contact .contact-info-item h4{
     font-size: 18px;
@@ -658,4 +662,49 @@ margin-bottom: 40px;
 .contact .contact-form .btn{
     height: 50px;
     padding: 0 50px;
+}
+@media (max-width:1199px)
+{
+    .aside{
+        left: -270px;
+    }
+    .main content{
+        padding-left: 0;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display:block;
+        margin-left: 0;
+
+    }
+}
+@media(max-width:991px){
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+   
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img
+    {
+        display: none;
+    }
+}
+@media(max-width:767px)
+{   .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
