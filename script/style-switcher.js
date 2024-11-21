@@ -1,7 +1,7 @@
 /* ======================== toggler style switcher ========================*/
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-styleSwitchertoggle.addEventListener("click",()=> {
-    document.querySelector(".style-switcher").classList.toggle("open");
+styleSwitcherToggle.addEventListener("click",()=> {
+document.querySelector(".style-switcher").classList.toggle("open");
 })
 /* hide style - switcher on scrooll*/
 window.addEventListener("scroll", ()=> {

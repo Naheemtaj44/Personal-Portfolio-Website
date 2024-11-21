@@ -8,7 +8,7 @@
     <!-- ===== CSS Files ===== -->
     <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/skins/color-1.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
 <!--===== style switcher =====-->
 <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1"
 disabled >
@@ -35,7 +35,7 @@ disabled>
     <span></span>
 </div>
     <ul class="nav">
-        <li><a href="#home" class="active"><i class="fa fa-home"></i>home</a></li>
+        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
         <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
         <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
         <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Porfolio</a></li>
@@ -47,14 +47,14 @@ disabled>
           <!-- ===== main Content Start =====-->
            <div class="main-content">
               <!-- ===== Home Section Start =====-->
-               <sectiom class="home section"id="home">
+               <sectiom class="home active section"id="home">
             <div class="container">
                 <div class="row">
                     <div class="home-info padd-15">
                         <h3 class="hello">Hello, my name is <span class="name">Nadeem Taj</span></h3>
                         <h3 class="my-profession">I'm a <span class="typing"> Devops Engineer</span></h3>
-                        <p>i am a devops engineer with extensive experiece for over 10 year three years. My expertise is to test website</p>
-                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                        <p>i am a devops engineer with extensive experiece for over year three years. My expertise is to test website</p>
+                        <a href="#" class="btn">Download CV</a>
                     </div>
                     <div class="home-img padd-15">
                         <img src="images/WhatsApp Image 2024-11-16 at 9.22.13 AM.jpeg" alt="">
@@ -64,7 +64,7 @@ disabled>
                </sectiom>
                 <!-- ===== Home Section End =====-->
                   <!-- ===== About Section Start =====-->
-                   <section class="about section"id="about">
+                   <section class="about section"id="about">  
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -112,8 +112,7 @@ disabled>
                                         </div>
                                         <div class="row">
                                             <div class="buttons padd-15">
-                                                <a href="#" class="btn">Download CV</a>
-                                                <a href="#contact"class="btn hire-me" >Hire Me</a>
+                                                <a href="#contact" data-section-index="1" class="btn hire-me" >Hire Me</a>
                                             </div>
                                         </div>
                                     </div>
@@ -297,8 +296,12 @@ disabled>
                                         <div class="icon">
                                             <i class="fa fa-bullhorn"></i>
                                         </div>
-                                        <h4>Devop Engineer</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisc Sed ac justo euismod, mattis velit sed, pulvinar turpis.</p>
+                                        <h4>Data analysis</h4>
+                                        <p>We provide comprehensive data analysis services to help businesses make informed,
+                                             data-driven decisions. Our expert team specializes in data cleaning, visualization,
+                                              and advanced analytics, transforming complex datasets into actionable insights. 
+                                              Whether you need to optimize operations, predict trends, or improve performance, 
+                                            we deliver customized solutions to unlock the full potential of your data</p>
                                     </div>
                                  </div>
                                      <!-- ===== Service Item End =====-->
@@ -306,10 +309,13 @@ disabled>
                                  <div class="service-item padd-15">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <i class="fa fa-mobile"></i>
+                                            <i class="fab fa-aws"></i>
                                         </div>
-                                        <h4>Devop Engineer</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing  Sed ac justo euismod, mattis velit sed, pulvinar turpis.</p>
+                                        <h4>AWS</h4>
+                                        <p>We provide a wide range of Amazon Web Services (AWS) solutions to help businesses scale,
+                                             secure, and optimize their cloud infrastructure. From cloud hosting and data storage to machine
+                                              learning and serverless computing, our AWS services are designed to deliver reliability, flexibility, and cost-efficiency for your organization.
+                                               Let us help you harness the power of AWS to innovate and grow your business with cutting-edge cloud technologies.</p>
                                     </div>
                                  </div>
                                      <!-- ===== Service Item End =====-->
@@ -319,8 +325,10 @@ disabled>
                                         <div class="icon">
                                             <i class="fa fa-laptop-code"></i>
                                         </div>
-                                        <h4>Devop Engineer</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed ac justo euismod, mattis velit sed, pulvinar turpis.</p>
+                                        <h4>Machine Learning</h4>
+                                        <p>We offer expert machine learning services to help businesses unlock the power of data. From predictive analytics and custom AI models to data processing and automation,
+                                             we tailor solutions to drive smarter decisions, enhance efficiency,
+                                              and fuel innovation. Let us help you turn your data into valuable insights with advanced machine learning techniques.</p>
                                     </div>
                                  </div>
                                      <!-- ===== Service Item End =====-->
@@ -484,7 +492,7 @@ disabled>
                     <i class="fas fa-cog fa-spin"></i>
                 </div>
                 <div class="day-night s-icon">
-                    <i class="fas"></i>
+                    <i class="fas "></i>
                 </div>
                 <h4>Theme Colors</h4>
                 <div class="colors">
@@ -497,7 +505,8 @@ disabled>
              </div>
               <!-- ===== Style Switcher End =====-->
           <!-- ===== JS Files ===== -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"referrerpolicy="no-referrer"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+           integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script/Script.js"></script>
     <script src="script/style-switcher.js"></script>
