@@ -22,7 +22,9 @@ function setActiveStyle(color)
          else{
             style.setAttribute("disabled","true");
          }
-        })}
+        }
+    )
+    }
 
         /* ======================== themes light and dark mode ========================*/
         const dayNight = document.querySelector(".day-night");
